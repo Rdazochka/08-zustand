@@ -24,12 +24,14 @@ export async function generateMetadata({
       title: `${note.title} | NoteHub`,
       description: note.content.slice(0, 160),
       url: `https://notehub.com/notes/${id}`,
-      images: {
-        url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'NoteHub',
-      },
+      images: [
+        {
+          url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'NoteHub',
+        },
+      ],
     },
   };
 }
